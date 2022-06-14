@@ -3,14 +3,6 @@ import type { DMMF } from '@prisma/generator-helper'
 import type { Dictionary } from './utils/common'
 import { keyBy, ScalarTypeTable } from './utils/common'
 
-/**
- * List of Prisma enums that must use symbols instead of strings as their values.
- */
-export const symbolEnums = ['JsonNullValueInput', 'NullableJsonNullValueInput', 'JsonNullValueFilter']
-
-/**
- * DMMF wrapper that resolves and merges references to types.
- */
 export class DMMFHelper implements DMMF.Document {
   public datamodel: DMMF.Datamodel
   public schema: DMMF.Schema
