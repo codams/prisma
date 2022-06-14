@@ -4,6 +4,8 @@ import path from 'path'
 import { getDMMF } from '../../../../generation/getDMMF'
 import { compileFile } from '../../../../utils/compileFile'
 
+jest.setTimeout(120_000)
+
 /**
  * Makes sure, that the actual dmmf value and types are in match
  */
